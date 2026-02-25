@@ -4,4 +4,4 @@ Repositório do site "Não sejas burrito!", um site de receitas feito como um pr
 
 ## 🌐 Deploy
 
-👉 [Clique aqui para acessar o projeto online]([https://meusite.com](https://estevaolocks.github.io/NaoSejasBurrito/))
+👉 [Clique aqui para acessar o projeto online](https://estevaolocks.github.io/NaoSejasBurrito/)
