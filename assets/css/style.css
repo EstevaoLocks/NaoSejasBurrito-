@@ -28,10 +28,13 @@
 
 body {
     font-family: 'Inclusive Sans';
+    color: #50514f;
 }
 
 nav {
     background-color: #F4F1DE;
+    position: fixed;
+    width: 100%;
 
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +42,10 @@ nav {
     align-items: center;
 
     padding: 0px 24px;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 .linksMenu-container {
@@ -50,8 +57,7 @@ nav {
 .linkMenu {
     padding: 24px 32px 32px 32px;
 
-    
-    color: inherit;
+    color: #50514f;
     border-bottom: 2px solid #e07b5f00;
     transition: all 0.3s ease;
 }
@@ -66,6 +72,32 @@ nav {
 }
 
 .logo {
+    color: #50514f;
     font-family: Imbue;
     font-size: 36px;
+}
+
+.pageHeader {
+    background-image: url("../img/comidaMexicana_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-container {
+    height: 810px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msgHeader-container {
+    max-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
 }
