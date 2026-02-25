@@ -44,8 +44,16 @@ nav {
     padding: 0px 24px;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 h2 {
     font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 .linksMenu-container {
@@ -110,7 +118,7 @@ h2 {
 .iconeSetaHeader {
     width: 40px;
     
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
     animation: float 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
@@ -151,5 +159,70 @@ h2 {
     width: 100%;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+.imgBurrito-tiposReceita img {
+    height: 100%;
+}
+
+.imgBurrito-tiposReceita {
+    height: 400px;
+    width: 288px;
+    overflow: hidden;
+}
+
+.tiposReceita-title {
+    width: 464px;
+    font-size: 48px;
+
+    margin-left: 24px;
+}
+
+.menuTiposReceita-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.menuTiposReceita {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkTipoReceita {
+    width: 124px;
+    height: 124px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkTipoReceita img {
+    width: 74px;
+    height: 74px;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+
+    border-radius: 23px;
+    transition: all 0.2s ease-in-out;
+}
+
+.linkTipoReceita:hover img {
+    width: 58px;
+    height: 58px;
+}
+
+.linkTipoReceita:active img {
+    width: 44px;
+    height: 44px;
 }
