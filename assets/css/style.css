@@ -1,11 +1,33 @@
-/* <weight>: Use a value from 100 to 900 */
-/* <uniquifier>: Use a unique and descriptive class name */
+* {
+    box-sizing: border-box;
+}
+
+/* Fonte Imbue */
+/* ----------- */
+/* <weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name */
 
 .imbue-normal {
   font-family: "Imbue", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Fonte Inclusive Sans */
+/* -------------------- */
+/* <weight>: Use a value from 300 to 700
+<uniquifier>: Use a unique and descriptive class name */
+
+.inclusive-sans-normal {
+    font-family: "Inclusive Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Inclusive Sans';
 }
 
 nav {
@@ -25,12 +47,22 @@ nav {
     justify-content: space-between;
 }
 
-.linksMenu-container:hover {
-    border-bottom: 2px solid ;
+.linkMenu {
+    padding: 24px 32px 32px 32px;
+
+    
+    color: inherit;
+    border-bottom: 2px solid #e07b5f00;
+    transition: all 0.3s ease;
 }
 
-.linkMenu-container {
-    padding: 24px 32px 32px 32px;
+.linkMenu:hover {
+    border-bottom: 2px solid #E07A5F;
+
+    cursor: pointer;
+    background-color: #EAE7D3;
+
+    color: #E07A5F;
 }
 
 .logo {
