@@ -31,6 +31,11 @@ body {
     color: #50514f;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 nav {
     background-color: #F4F1DE;
     position: fixed;
@@ -65,14 +70,33 @@ h2 {
     padding: 32px 0;
 }
 
+.subtitlePrimary {
+    color: #50514f;
+    font-size: 32px;
+}
+
 .subtitleTerciary {
     color: #F4F1DE;
-    font-size: 24px;
+    font-size: 32px;
+}
+
+.subtitleQuaternary {
+    color: #E07A5F;
+    font-size: 32px;
 }
 
 .posSubtitleTerciary {
     color: #F4F1DE;
-    font-size: 18px;
+    font-size: 24px;
+}
+
+.posSubtitleQuaternary {
+    color: #E07A5F;
+    font-size: 24px;
+}
+
+.txtEnd {
+    text-align: end;
 }
 
 .linksMenu-container {
@@ -403,4 +427,91 @@ h2 {
     color: #F4F1DE;
 
     justify-self: flex-end;
+}
+
+.sectionPratosTipicos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    background-color: #F4F1DE;
+    padding: 40px;
+}
+
+.sectionPratosTipicos .titlePrimary {
+    width: 100%;
+    padding: 0 0 16px 0;
+}
+
+.sectionPratosTipicos .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerPratoTipico {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgPratoTipico-container {
+    width: 50%;
+}
+
+.imgPratoTipico-container img {
+    width: 100%;
+}
+
+.infoPratoTipico-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textPratoTipico {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+    line-height: 18px;
+
+    gap: 16px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-container svg {
+    width: 24px;
+
+    transition: all 0.3s ease;
+}
+
+.link-container p {
+    transition: all 0.3s ease;
+}
+
+.link-container a {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.link-container a:hover svg {
+    transform: rotate(30deg);
+}
+
+.link-container a:hover p {
+    transform: scale(1.03) ;
+    color: #E07A5F;
 }
