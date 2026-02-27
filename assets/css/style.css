@@ -61,13 +61,16 @@ h2 {
 .titlePrimary {
     color: #50514f;
     font-size: 48px;
-    padding: 32px 0;
 }
 
 .titleSecondary {
     color: #F2CC8F;
     font-size: 48px;
-    padding: 32px 0;
+}
+
+.titleTertiary {
+    color: #F4F1DE;
+    font-size: 48px;
 }
 
 .subtitlePrimary {
@@ -75,7 +78,7 @@ h2 {
     font-size: 32px;
 }
 
-.subtitleTerciary {
+.subtitleTertiary {
     color: #F4F1DE;
     font-size: 32px;
 }
@@ -85,7 +88,7 @@ h2 {
     font-size: 32px;
 }
 
-.posSubtitleTerciary {
+.posSubtitleTertiary {
     color: #F4F1DE;
     font-size: 24px;
 }
@@ -280,6 +283,10 @@ h2 {
     padding: 40px 0;
 
     background-color: #880D1E;
+}
+
+.receitasSemana-section .titleSecondary {
+    padding: 32px 0;
 }
 
 .cardReceitaSemana {
@@ -514,4 +521,85 @@ h2 {
 .link-container a:hover p {
     transform: scale(1.03) ;
     color: #E07A5F;
+}
+
+.newsletterSection {
+    background-color: #E07A5F;
+    padding: 40px;
+}
+
+.newsletterSection header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletterSection .logo {
+    color: #F4F1DE;
+}
+
+.newsletterSection form {
+    width: 100%;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+}
+
+.newsletterSection form label {
+    font-family: "Imbue", serif;
+    font-size: 24px;
+    color: #F4F1DE;
+}
+
+.newsletterSection form input {
+    width: 400px;
+    padding: 20px 20px;
+
+    border: 2px solid #C5C0A1;
+    border-radius: 16px;
+
+    font-size: 20px;
+    color: #C5C0A1;
+}
+
+.newsletterSection form input::placeholder {
+    font-size: 20px;
+    color: #C5C0A1;
+    
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.newsletterSection form input:focus {
+    border: 2px solid #C5C0A1;
+    outline: none;
+    box-shadow: none;
+}
+
+.newsletterSection form button {
+    padding: 20px 30px;
+
+    border: 2px solid #C5C0A1;
+    border-radius: 16px;
+
+    font-size: 20px;
+    color: #C5C0A1;
+    
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.newsletterSection form button:hover {
+    padding: 20px 30px;
+    background-color: #c5c0a100;
+
+    border: 2px solid #F4F1DE;
+    color: #F4F1DE;
+    cursor: pointer;
+}
+
+.newsletterSection form button:active {
+    background-color: #C5C0A1;
 }
