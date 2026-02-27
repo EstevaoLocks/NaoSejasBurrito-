@@ -130,14 +130,30 @@ h2 {
 }
 
 .logo-header {
-  font-family: "Imbue", serif;
+    font-family: "Imbue", serif;
     font-size: 24px;
+}
+
+.iconeSetaHeader:hover {
+    width: 50px;
+}
+
+.iconeSetaHeader-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    height: 70px;
+}
+
+.iconeSetaHeader-container a {
+    position: absolute;
 }
 
 .iconeSetaHeader {
     width: 40px;
     
-    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     animation: float 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
@@ -151,21 +167,6 @@ h2 {
   100% {
     transform: translateY(0);
   }
-}
-.iconeSetaHeader:hover {
-    width: 44px;
-}
-
-.iconeSetaHeader-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    height: 70px;
-}
-
-.iconeSetaHeader-container a {
-    position: absolute;
 }
 
 .tiposReceita-section {
