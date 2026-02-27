@@ -67,6 +67,12 @@ h2 {
 
 .subtitleTerciary {
     color: #F4F1DE;
+    font-size: 24px;
+}
+
+.posSubtitleTerciary {
+    color: #F4F1DE;
+    font-size: 18px;
 }
 
 .linksMenu-container {
@@ -252,12 +258,12 @@ h2 {
 
 .cardReceitaSemana {
     width: 1400px;
-    height: 500px;
     max-width: 80%;
 
     display: flex;
     flex-wrap: wrap;
 
+    color: #F4F1DE;
     background-color: rgba(244,241,222, 0.17);
     border: 2px solid rgba(244,241,222, 0.31);
     border-radius: 40px;
@@ -266,11 +272,19 @@ h2 {
 .containerEsquerda-receitaSemana {
     width: 50%;
     padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
 }
 
 .containerDireita-receitaSemana {
     width: 50%;
     padding: 40px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .imgReceitaSemana-container {
@@ -279,8 +293,63 @@ h2 {
 
 .imgReceitaSemana-container figure {
     width: 100%;
+    border-radius: 15px;
+
+    overflow: hidden;
 }
 
 .imgReceitaSemana-container figure img {
     width: 100%;
+}
+
+.titleReceitaSemana-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.titleReceitaSemana {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.categoriaReceitaSemana {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.textReceitaSemana {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.receitaReceitaSemana-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ingredientesReceitaSemana {
+    list-style-type: disc;
+    padding-left: 24px;
+    
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.modoPreparoReceitaSemana {
+    list-style-type: decimal;
+    padding-left: 0;
+    
+    font-size: 16px;
+    line-height: 18px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
 }
