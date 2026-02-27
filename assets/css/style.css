@@ -35,6 +35,7 @@ nav {
     background-color: #F4F1DE;
     position: fixed;
     width: 100%;
+    z-index: 2;
 
     display: flex;
     flex-wrap: wrap;
@@ -52,8 +53,20 @@ h2 {
     font-size: 32px;
 }
 
-h3 {
-    font-size: 24px;
+.titlePrimary {
+    color: #50514f;
+    font-size: 48px;
+    padding: 32px 0;
+}
+
+.titleSecondary {
+    color: #F2CC8F;
+    font-size: 48px;
+    padding: 32px 0;
+}
+
+.subtitleTerciary {
+    color: #F4F1DE;
 }
 
 .linksMenu-container {
@@ -176,7 +189,6 @@ h3 {
 
 .tiposReceita-title {
     width: 464px;
-    font-size: 48px;
 
     margin-left: 24px;
 }
@@ -225,4 +237,50 @@ h3 {
 .linkTipoReceita:active img {
     width: 44px;
     height: 44px;
+}
+
+.receitasSemana-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 0;
+
+    background-color: #880D1E;
+}
+
+.cardReceitaSemana {
+    width: 1400px;
+    height: 500px;
+    max-width: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgba(244,241,222, 0.17);
+    border: 2px solid rgba(244,241,222, 0.31);
+    border-radius: 40px;
+}
+
+.containerEsquerda-receitaSemana {
+    width: 50%;
+    padding: 40px;
+}
+
+.containerDireita-receitaSemana {
+    width: 50%;
+    padding: 40px;
+}
+
+.imgReceitaSemana-container {
+    width: 100%;
+}
+
+.imgReceitaSemana-container figure {
+    width: 100%;
+}
+
+.imgReceitaSemana-container figure img {
+    width: 100%;
 }
