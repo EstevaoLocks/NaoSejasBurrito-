@@ -15,3 +15,9 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => { // laço para pega
     });
   });
 });
+
+function socialIconsAlert() {
+  if (confirm("Ops! Parece que os links das redes sociais ainda não estão configurados. Mas você pode visitar um Github bem maneiro clicando em 'OK' ;D")) {
+    window.open("https://github.com/estevaolocks", "_blank");
+  }
+}
