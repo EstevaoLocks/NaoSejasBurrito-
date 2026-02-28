@@ -1,7 +1,7 @@
-# NaoSejasBurrito-
+# NaoSejasBurrito!
 
 Repositório do site "Não sejas burrito!", um site de receitas feito como um projeto para a matéria de Gestão de Conteudo Web
 
-## 🌐 Deploy
+## 🌐 Acesse o site!
 
 👉 [Clique aqui para acessar o projeto online](https://estevaolocks.github.io/NaoSejasBurrito/)
