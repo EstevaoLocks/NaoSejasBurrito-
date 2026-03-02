@@ -730,3 +730,10 @@ footer hr {
     text-align: center;
     color: #880D1E;
 }
+
+.titleSecondary.pgReceita {
+    padding-top: 100px;
+
+    background-color: #880D1E;
+    text-align: center;
+}
