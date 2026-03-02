@@ -713,3 +713,20 @@ footer hr {
 .copyright a:hover {
     color: #2FB7AB;
 }
+
+.headerPageReceitas {
+    padding: 40px;
+    padding-top: 100px;
+
+    background-color: #F4F1DE;
+}
+
+.headerPageReceitas .logo {
+    text-align: end;
+    color: #880D1E;
+}
+
+.titlePgReceitas {
+    text-align: center;
+    color: #880D1E;
+}
