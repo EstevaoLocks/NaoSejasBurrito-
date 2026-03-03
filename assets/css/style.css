@@ -976,6 +976,7 @@ footer hr {
     .newsletterSection form {
         width: 100%;
         padding: 0;
+        margin-top: 24px;
 
         display: flex;
         justify-content: end;
@@ -983,9 +984,14 @@ footer hr {
         align-items: center;
         gap: 0;
     }
+    
+    .newsletterSection form label {
+        width: 100%;
+    } 
 
     .newsletterSection form input {
-        width: 125px;
+        width: 100%;
+        margin-top: 8px;
         padding: 16px 16px;
         border-radius: 16px;
 
@@ -995,7 +1001,46 @@ footer hr {
     .newsletterSection form button {
         padding: 16px 16px;
         border-radius: 16px;
+        margin-top: 16px;
 
         font-size: 16px;
     } 
+    
+    .newsletterSection form button:hover {
+        padding: 16px 16px;
+        border-radius: 16px;
+        margin-left: 8px;
+
+        font-size: 16px;
+    }
+
+    .rowFooter {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .colFooter {
+        width: 100%;
+        margin-bottom: 32px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright p {
+        margin-top: 16px;
+    }
+
+    .titlePgReceitas {
+        padding-top: 16px;
+    }
+
+    .headerPageReceitas .logo {
+        margin-top: 20px;
+
+        text-align: center;
+    }
 }
