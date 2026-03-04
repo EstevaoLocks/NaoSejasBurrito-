@@ -621,6 +621,8 @@ h2 {
 .link-container {
     display: flex;
     justify-content: flex-end;
+
+    margin-top: 16px;
 }
 
 .link-container svg {
@@ -935,8 +937,8 @@ footer hr {
         margin-top: 24px;
     }
 
-    .sectionPratosTipicos .logo {
-        padding-top: 24px;
+    .sectionPratosTipicos .logo-cardReceitaSemana {
+        margin-top: 24px;
         font-size: 28px;
     }
 
