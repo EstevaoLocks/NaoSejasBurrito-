@@ -652,8 +652,6 @@ h2 {
     
     width: 100%;
     padding: 0 32px 32px 32px;
-    
-    /* background-color: #2FB7AB; */
 }
 .cardPratosTipicos  .verMaisPratosTipicos {
     margin-top: 16px;
@@ -691,6 +689,7 @@ h2 {
     justify-content: flex-end;
     text-align: end;
 
+    width: fit-content;
     margin-top: 16px;
 }
 
@@ -698,6 +697,11 @@ h2 {
     width: 24px;
 
     transition: all 0.3s ease;
+}
+
+.link-container svg path{
+    stroke: #F4F1DE;
+    stroke-width: 1;
 }
 
 .link-container p {
@@ -719,7 +723,12 @@ h2 {
 
 .link-container a:hover p {
     transform: scale(1.03) ;
-    color: #E07A5F;
+    color: #f2cc8f;
+}
+
+.link-container p:hover {
+    transform: scale(1.03) ;
+    color: #f2cc8f;
 }
 
 .newsletterSection {
