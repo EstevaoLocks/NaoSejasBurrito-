@@ -1,20 +1,20 @@
-gsap.registerPlugin(ScrollToPlugin); // Pega o plugin ScrollTo do GSAP para permitir animações de rolagem suave
+// gsap.registerPlugin(ScrollToPlugin); // Pega o plugin ScrollTo do GSAP para permitir animações de rolagem suave
 
-document.querySelectorAll("a[href^='#']").forEach(anchor => { // laço para pegar links retornados em lista
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
+// document.querySelectorAll("a[href^='#']").forEach(anchor => { // laço para pegar links retornados em lista
+//   anchor.addEventListener("click", function(e) {
+//     e.preventDefault();
 
-    // função do GSAP para o scroll
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: {
-        y: this.getAttribute("href"),
-        offsetY: 80
-      },
-      ease: "power3.out"
-    });
-  });
-});
+//     // função do GSAP para o scroll
+//     gsap.to(window, {
+//       duration: 1,
+//       scrollTo: {
+//         y: this.getAttribute("href"),
+//         offsetY: 80
+//       },
+//       ease: "power3.out"
+//     });
+//   });
+// });
 
 function socialIconsAlert() {
   if (confirm("Ops! Parece que os links das redes sociais ainda não estão configurados. Mas você pode visitar um Github bem maneiro clicando em 'OK' ;D")) {
@@ -57,7 +57,7 @@ document.querySelectorAll(".verMaisReceitaSemana").forEach(link => { // laço pa
       card.style.height = card.scrollHeight + "px";
 
       // Altera o texto do link
-      const linkText = card.querySelector(".verMaisPratosTipicos").children[0];
+      const linkText = card.querySelector(".verMaisReceitaSemana").children[0];
       // Verifica se achou um 'linkText'
       if (linkText) linkText.innerHTML = "Ver menos";
 
@@ -70,7 +70,7 @@ document.querySelectorAll(".verMaisReceitaSemana").forEach(link => { // laço pa
       
       // Força um reflow e depois define a altura inicial
       card.offsetHeight;
-      card.style.height = initHeight; // Altura inicial
+      card.style.height = initialHeight; // Altura inicial
       
       card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0].innerHTML = "Ver mais";
     }
