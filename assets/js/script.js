@@ -87,26 +87,36 @@ document.querySelectorAll(".verMaisPratosTipicos").forEach(link => { // laço pa
     
     if (!card.classList.contains("active")) {
       // Antes de expandir, pega a altura total
-      initHeight = card.clientHeight + "px";
-      card.style.height = initHeight;
+      const currentHeight = card.clientHeight;
+      card.dataset.initialHeight = currentHeight + "px";
+
+      card.style.height = currentHeight + "px";
       card.classList.add("active");
       
       // Força um reflow e depois define a altura total
       card.offsetHeight; // Isso força o navegador a recalcular
       card.style.height = card.scrollHeight + "px";
 
-      card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0].innerHTML = "Ver menos";
+      // Altera o texto do link
+      const linkText = card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0];
+      if (linkText) linkText.innerHTML = "Ver menos";
 
     } else {
+      // Para recolher, usa a altura inicial armazenada
+      const initialHeight = card.dataset.initialHeight || "200px"; // fallback
+
       // Para recolher
       card.style.height = card.clientHeight + "px";
       card.classList.remove("active");
       
       // Força um reflow e depois define a altura inicial
       card.offsetHeight;
-      card.style.height = initHeight; // Altura inicial
+      // Volta para a altura inicial
+      card.style.height = initialHeight;
       
-      card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0].innerHTML = "Ver mais";
+      // Altera o texto do link
+      const linkText = card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0];
+      if (linkText) linkText.innerHTML = "Ver mais";
     }
   });
 })
