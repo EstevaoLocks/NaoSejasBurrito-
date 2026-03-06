@@ -76,9 +76,6 @@ document.querySelectorAll(".verMaisReceitaSemana").forEach(link => { // laço pa
 document.querySelectorAll(".verMaisPratosTipicos").forEach(link => { // laço para pegar links retornados em lista
   link.addEventListener("click", function(e) {
     e.preventDefault();
-    
-    // const card = this.closest("article");
-    // card.classList.toggle("active");
 
     const card = this.closest("article");
 
@@ -107,7 +104,8 @@ document.querySelectorAll(".verMaisPratosTipicos").forEach(link => { // laço pa
       card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0].innerHTML = "Ver mais";
     }
   });
-});
+})
+
 
 function ordenarCards() {
   // Alterando sequencia cards v2 (vermelhos)
