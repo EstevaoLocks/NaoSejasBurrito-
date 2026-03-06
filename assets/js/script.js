@@ -29,38 +29,36 @@ hamburgerBtn.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-// Tentativa frustrada de diminuir tamanho btn
-larguraBtnNewsletter = document.querySelector(".newsletterSection form button").offsetWidth;
-document.documentElement.style.setProperty("--inputSize-mediaCell", `${larguraBtnNewsletter}px`);
-
-let initHeight = "";
 
 // função de expandir cards (Receita Semana)
 document.querySelectorAll(".verMaisReceitaSemana").forEach(link => { // laço para pegar links retornados em lista
   link.addEventListener("click", function(e) {
     e.preventDefault();
-    
-    // const card = this.closest("article");
-    // card.classList.toggle("active");
 
     const card = this.closest(".cardReceitaSemana");
-
     
     if (!card.classList.contains("active")) {
-      // Antes de expandir, pega a altura total
-      initHeight = card.clientHeight + "px";
-      card.style.height = initHeight;
+      // Antes de expandir, pega a altura atual e armazena como atributo data
+      const currentHeight = card.clientHeight;
+      card.dataset.initialHeight = currentHeight + "px";
+      
+      card.style.height = currentHeight + "px";
       card.classList.add("active");
       
       // Força um reflow e depois define a altura total
       card.offsetHeight; // Isso força o navegador a recalcular
       card.style.height = card.scrollHeight + "px";
 
-      card.lastElementChild.querySelector(".verMaisPratosTipicos").children[0].innerHTML = "Ver menos";
+      // Altera o texto do link
+      const linkText = card.querySelector(".verMaisPratosTipicos").children[0];
+      // Verifica se achou um 'linkText'
+      if (linkText) linkText.innerHTML = "Ver menos";
 
     } else {
-      // Para recolher
-      card.style.height = card.clientHeight + 32 + "px";
+      // Para recolher, usa a altura inicial armazenada
+      const initialHeight = card.dataset.initialHeight || "200px"; // fallback
+      
+      card.style.height = card.clientHeight + "px";
       card.classList.remove("active");
       
       // Força um reflow e depois define a altura inicial
